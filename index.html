@@ -10,7 +10,7 @@
     <title>Menu Responsivo</title>
 </head>
 
-<body>
+<body id="bodyy">
     <header>
         <nav class="nav-bar">
             <div class="logo">
@@ -24,7 +24,7 @@
                 </ul>
             </div>
             <div class="login-button">
-                <button><a href="#">Login</a></button>
+                <button id="change" style="background-color: transparent;"><a href="#"><i id="mode_icon" class="fa-solid fa-moon fa-2xl" style="color: #27eb00;"></i></a></button>
             </div>
 
             <div class="mobile-menu-icon">
@@ -40,17 +40,18 @@
 
             <div class="login-button">
                 <button><a href="#">Login</a></button>
+                <i class="fa-solid fa-moon"></i>
             </div>
         </div>
     </header>
 
 
-    <main>
+    <main class="secoes">
         <section id="principal">
             <div class="principal-esquerda">
-                <h2>Hi, i'm <span id="joao">João</span></h2>
-                <h1>I'M A FULL STACK <br> DEVELOPER</h1>
-                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </P>
+                <h2 id="text-h2">Hi, i'm <span id="joao">João</span></h2>
+                <h1 id="text-h1">I'M A FULL STACK <br> DEVELOPER</h1>
+                <P>Click on the button below to download my CV </P>
                 <button id="btn-projects">Download CV</button>
 
             </div>
@@ -66,7 +67,7 @@
     <hr id="divisor-de-abas">
 </div>
 
-    <main id="about">
+    <main id="about" class="secoes">
     
 
         
@@ -79,9 +80,8 @@
             <div class="principal-direita-about">
                 <div class="text-about">
                     <h1 id="title-about">ABOUT ME</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsa eos, maxime alias qui velit sint doloribus. Dolores corporis unde nam totam, sit sapiente, velit, nesciunt numquam rem quod ipsum! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore, reiciendis praesentium enim quos fugiat possimus laboriosam beatae assumenda mollitia esse, ut fuga at veritatis. Eligendi odit placeat nesciunt labore? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum iusto possimus cupiditate quia aperiam totam, magnam ullam at optio non sed, dolor voluptatum voluptate. Id porro alias quae quia qui?
-                    </p>
+                    <p id="text-aboutme">
+                      Hello, I'm João Victor, a Computer Science enthusiast with a passion for technology and software development. Currently, I'm pursuing a degree in Computer Science and actively seeking opportunities to enhance my skills and contribute to innovative projects. Below, you'll find the programming languages I'm working on:  </p>
                 </div>
                 <div class="tech">
                     <img src="img/html-5 (1).png" alt="" class="tech-size" id="html">
@@ -106,7 +106,7 @@
     
 
 <!-----------------------------------------------------------------------------------------PROJETOS-->
-    <main id="projects">
+    <main id="projects" class="secoes">
        
         <section id="title-project"> <h1 
             id="title-project-h1">PROJECTS</h1>

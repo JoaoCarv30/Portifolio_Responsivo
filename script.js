@@ -8,3 +8,21 @@ function menuShow() {
         document.querySelector('.icon').src = "img/close_white_36dp.svg";
     }
 }
+
+
+
+const modeIcon = document.querySelector("#mode_icon");
+
+modeIcon.addEventListener("click", (evt) => {
+    const secoes = document.body
+
+    if (modeIcon.classList.contains('fa-moon')) {
+        modeIcon.classList.remove('fa-moon');
+        modeIcon.classList.add('fa-sun');
+        secoes.classList.add("dark");
+    } else {
+        modeIcon.classList.add('fa-moon');
+        modeIcon.classList.remove('fa-sun');
+        secoes.classList.remove("dark");
+    }
+});
